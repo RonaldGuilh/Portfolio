@@ -85,7 +85,7 @@
     transform: rotate(135deg);
 }
 
-@media (max-width: 1000px){
+@media (max-width: 800px){
 
     .nav-links{
         display: none;
