@@ -47,7 +47,7 @@
 
 .hamburguer {
     display: none;
-    color: var(--cor-branco);
+    color: var(--branco);
     width: 36px;
     height: 36px;
     border-top: 4px solid;
@@ -85,9 +85,6 @@
 }
 
 @media (max-width: 1000px){
-    .logo-desktop{
-        display: none;
-    }
 
     .nav-links{
         display: none;
@@ -95,10 +92,6 @@
 
     .external-links{
         display: none;
-    }
-
-    .logo-mobile{
-        display: block;
     }
 
     .hamburguer{
@@ -113,7 +106,7 @@
         position: absolute;
         right: 0;
 
-        background: var(--cor-preto);
+        background: var(--preto);
         max-width: 300px;
         min-width: 250px;
         height: 80vh;
