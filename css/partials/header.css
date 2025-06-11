@@ -1,0 +1,22 @@
+.site-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--preto);
+    padding: 12px 0;
+}
+
+.nav-links{
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a{
+    font-size: var(--corpo-texto);
+    color: var(--branco);
+}
+
+.external-links{
+    display: flex;
+    gap: 24px;
+}

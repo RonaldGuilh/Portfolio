@@ -1,0 +1,25 @@
+@import url("./normalize.css");
+@import url("./variables.css");
+
+body{
+    font-family: "Poppins", sans-serif;
+    background: var(--fundo);
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 80%;
+    height: 100%;
+}
