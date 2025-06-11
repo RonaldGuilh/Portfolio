@@ -114,6 +114,8 @@
         height: 78.6vh;
         gap: 64px;
         padding: 40px 0;
+
+        border-bottom-left-radius: 16px;
     }
 
     .mobile-menu .active{
