@@ -1,4 +1,4 @@
 @font-face {
     font-family: 'MinhaFonte';
-    src: url('/fonts/Aloevera-Regular.otf') format('woff2'),
+    src: url('./fonts/Aloevera-Regular.otf') format('woff2'),
 }
