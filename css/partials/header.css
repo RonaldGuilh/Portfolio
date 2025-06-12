@@ -102,7 +102,7 @@
     .mobile-menu.active{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items:center;
         justify-content: space-between;
         position: absolute;
         right: 0;
@@ -111,9 +111,9 @@
         background: var(--preto);
         max-width: 300px;
         min-width: 250px;
-        height: 78.6vh;
+        height: 60vh;
         gap: 64px;
-        padding: 40px 0;
+        padding: 40px 0px;
 
         border-bottom-left-radius: 16px;
     }

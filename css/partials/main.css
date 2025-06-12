@@ -27,7 +27,7 @@
   font-family: "MinhaFonte";
   font-weight: 700;
   color: var(--principal);
-  font-size: clamp(64px, 4.5vw, 96px);
+  font-size: clamp(56px, 4.5vw, 88px);
 }
 
 
@@ -49,6 +49,7 @@
 
 .buttons{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   max-width: 550px;
   width: 100%;
@@ -56,7 +57,7 @@
 }
 
 .button-main{
-  background: linear-gradient(45deg, #124bc6, #76a1ff);
+  background: linear-gradient(45deg, #0a2192, #1A5EF3);
   display: flex;
   align-items: center;
   max-width: 539px;
@@ -66,6 +67,19 @@
   padding: 16px 32px;
   border-radius: 16px;
   border: none;
+}
+
+.button-main-2{
+  background: transparent;
+  display: flex;
+  align-items: center;
+  max-width: 539px;
+  max-height: 64px;
+  font-size: var(--corpo-texto);
+  color: #424242;
+  padding: 16px 32px;
+  border-radius: 16px;
+  border: 2px solid #424242;
 }
 
 .hero-main img{
@@ -104,6 +118,8 @@
   }
 
   .buttons{
+    flex-direction: column-reverse;
+    justify-content: center;
     align-items: center;
   }
 }
