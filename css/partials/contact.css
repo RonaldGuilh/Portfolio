@@ -11,25 +11,29 @@
 .contact-area h2{
     max-width: 536px;
     font-family: 'MinhaFonte', 'Poppins', sans-serif;
-    font-size: clamp(48px, 3.75vw, 72px);
+    font-size: clamp(40px, 3.25vw, 64px);
     line-height: 64px;
     color: var(--principal);
     z-index: 99;
 }
 
 .inputs-contact{
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
     gap: 12px;
 }
 
 input{
     font-family: 'MinhaFonte', sans-serif;
     font-size: var(--corpo-texto);
-    width: clamp(200px, 100%, 536px);
+    width: 100%;
+    max-width: 563px;
     padding: 14px 16px;
     box-sizing: border-box;
     border-radius: 8px;
-    border: 3px solid var(--cinza-input);
+    border: 2px solid var(--cinza-input);
     background-color: rgba(198, 198, 198, 0.4);
 }
 
@@ -39,9 +43,9 @@ input:focus{
 }
 
 .send-email{
-    font-family: var(--fonte-principal);
-    font-size: 1.5rem;
-    width: 572px;
+    font-family: 'MinhaFonte', 'Poppins', sans-serif;
+    font-size: var(--corpo-texto);
+    width: 100%;
     padding:14px 16px;
     background: var(--principal);
     color: var(--branco);
@@ -49,4 +53,20 @@ input:focus{
     border: none;
     border-radius: 8px;
     cursor: pointer;
+}
+
+@media (max-width: 800px){
+    .contact-area{
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .contact-area h2{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .inputs-contact{
+        margin: 0 auto;
+    }
 }
