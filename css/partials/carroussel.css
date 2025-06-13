@@ -1,0 +1,54 @@
+.carrossel-infinito{
+    position: relative;
+    background: var(--preto);
+}
+
+.carrossel-infinito::before,
+.carrossel-infinito::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.carrossel-infinito::before {
+    left: 0;
+    background: linear-gradient(to right, black, transparent);
+  }
+  
+  .carrossel-infinito::after {
+    right: 0;
+    background: linear-gradient(to left, black, transparent);
+  }
+
+.stock-ticker{
+    font-size: 18px;
+    padding-block: 8px;
+    overflow: hidden;
+    user-select: none;
+    display: flex;
+    gap: 144px;
+}
+
+.stock-ticker ul{
+    font-family: var(--fonte-principal);
+    color: var(--branco);
+    padding: 5px 0px;
+
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 9rem;
+    white-space: nowrap;
+
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll{
+    to{
+        transform: translateX(calc(-100% - 144px));
+    }
+}

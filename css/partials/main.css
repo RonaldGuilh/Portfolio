@@ -24,7 +24,7 @@
 }
 
 .content .titulo-main{
-  font-family: 'MinhaFonte';
+  font-family: 'MinhaFonte', 'Poppins', sans-serif;
   font-weight: 700;
   color: var(--principal);
   font-size: clamp(56px, 4.5vw, 88px);

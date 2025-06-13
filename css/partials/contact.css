@@ -1,0 +1,52 @@
+.contact-area{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 135px;
+    margin-top: 104px;
+}
+
+.contact-area h2{
+    max-width: 536px;
+    font-family: 'MinhaFonte', 'Poppins', sans-serif;
+    font-size: clamp(48px, 3.75vw, 72px);
+    line-height: 64px;
+    color: var(--principal);
+    z-index: 99;
+}
+
+.inputs-contact{
+    display: grid;
+    gap: 12px;
+}
+
+input{
+    font-family: 'MinhaFonte', sans-serif;
+    font-size: var(--corpo-texto);
+    width: clamp(200px, 100%, 536px);
+    padding: 14px 16px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 3px solid var(--cinza-input);
+    background-color: rgba(198, 198, 198, 0.4);
+}
+
+input:focus{
+    border-color: var(--input-selected);
+    outline: none;
+}
+
+.send-email{
+    font-family: var(--fonte-principal);
+    font-size: 1.5rem;
+    width: 572px;
+    padding:14px 16px;
+    background: var(--principal);
+    color: var(--branco);
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
