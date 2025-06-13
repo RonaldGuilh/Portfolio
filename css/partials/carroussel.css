@@ -34,7 +34,7 @@
 }
 
 .stock-ticker ul{
-    font-family: var(--fonte-principal);
+    font-family: 'Poppins';
     color: var(--branco);
     padding: 5px 0px;
 
