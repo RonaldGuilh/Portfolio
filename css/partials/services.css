@@ -1,4 +1,138 @@
 .services{
-    background: var(--principal);
-    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-services{
+    font-family: 'MinhaFonte', 'Poppins', sans-serif;
+    font-size: 5rem;
+    font-weight: 800;
+    padding: 56px 0;
+}
+
+.nav-services{
+    display: flex;
+    background: var(--cinza);
+    padding: 16px 0px 14px 0px;
+    border-radius: 100px;
+    margin-bottom: 56px;
+}
+
+.nav-services a{
+    text-decoration: none;
+    color: var(--preto);
+    font-family: 'MinhaFonte', 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: var(--corpo-texto);
+    padding: 11px 69px;
+}
+
+.nav-services a.ativo{
+    color: var(--branco);
+    background: var(--preto);
+    border-radius: 100px;
+}
+
+.info-services{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    padding: 54px 0;
+    margin-bottom: 104px;
+}
+
+.img-service{
+    max-width: 556px;
+    width: 100%;
+}
+
+.text{
+    display: grid;
+    gap: 12px;
+}
+
+.text p{
+    font-family: 'MinhaFonte', 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.25rem;
+    max-width: 498px;
+}
+
+.text h2{
+    font-family: 'MinhaFonte', 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 3rem;   
+}
+
+.button-services{
+    width: fit-content;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.button-services p{
+    font-family: 'MinhaFonte', 'Poppins', sans-serif;
+    text-decoration: underline;
+}
+
+.js .js-tabcontent section{
+    display: none;
+}
+
+.js-tabcontent section.ativo{
+    display: grid !important;
+    animation: show .5s forwards;
+}
+
+@keyframes show{
+    from{
+        opacity: 0;
+        transform: translate3d(30px, 0, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@media (max-width: 1180px){
+    .info-services{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .info-services .text .title{
+        margin: 0 auto;
+        align-self: center;
+    }
+
+    .info-services .text p{
+        text-align: center;
+    }
+
+    .info-services .button-services{
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 931px){
+    .nav-services{
+        flex-direction: column;
+        gap: 32px;
+        border-radius: 16px;
+        align-items: center;
+    }
+
+    .info-services a.ativo{
+        width: 262.25px;
+        border-radius: 16px;
+    }
 }

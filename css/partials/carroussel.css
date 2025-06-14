@@ -1,6 +1,8 @@
 .carrossel-infinito{
     position: relative;
     background: var(--preto);
+
+    margin-bottom: 32px;
 }
 
 .carrossel-infinito::before,
